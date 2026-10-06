@@ -1,0 +1,9 @@
+{
+  "world_size": 8,
+  "gpu": "H100",
+  "maximum_loss": 3.28,
+  "exclusive_maximum_seconds": 39.9,
+  "seed": 42,
+  "note": "Local evidence checks are not official PrimeIntellect validation. Training time uses the upstream clock, excluding compilation and final validation.",
+  "requires_faster_matched_baseline": true
+}

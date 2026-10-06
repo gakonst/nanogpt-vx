@@ -1,0 +1,11 @@
+{
+  "status": "quoted_not_purchased",
+  "provider": "Modal via MPP / Mercator",
+  "quoted_at": "2026-10-06T19:02:23.329Z",
+  "valid_until": "2026-10-06T19:07:22.972Z",
+  "currency": "USD",
+  "total_amount": "31.5936",
+  "plan_sha256": "c9a26ebc40ffec768870449e95b52ff7025206f0e4f7c1a46495c30e76baf5d5",
+  "requires_fresh_quote": true,
+  "note": "One hour, eight H100s, CUDA 13.1.1 Ubuntu24.04 development image. Exec/status each additionally quoted USD0.0001. No job submitted."
+}

@@ -1,0 +1,3 @@
+*.vx linguist-language=Rust
+vendor/** linguist-vendored
+*.sh text eol=lf

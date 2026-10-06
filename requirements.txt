@@ -1,0 +1,12 @@
+# Install torch first from the cu128 wheel index; upstream needs CUDA 13 runtime.
+torch==2.10.0
+numpy
+tqdm
+huggingface-hub==1.29.0
+kernels==0.16.1
+setuptools
+typing-extensions==4.15.0
+datasets
+tiktoken
+# Vx is installed separately from the pinned release by scripts/setup_gpu.sh.
+# Capture the full resolved environment with pip freeze in every run bundle.

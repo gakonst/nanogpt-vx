@@ -1,0 +1,7 @@
+nanoGPT-Vx builds on KellerJordan/modded-nanogpt, pinned at
+4ea6b937337a4889b8cfe3f38a93d120048d8f71 (MIT license).
+The vendored trainer retains its original license and contributor attribution.
+
+Vx language compiler: https://github.com/vx-lang/Vx
+Vx is separately licensed Apache-2.0 WITH LLVM-exception; its compiler is
+installed separately and is not included in this repository.

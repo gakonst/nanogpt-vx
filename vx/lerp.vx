@@ -1,0 +1,31 @@
+// Arithmetic matches track_1_short/perf/kernels/lerp.py at 4ea6b937.
+// build.py lowers these four external hooks to LLVM intrinsics on GPU,
+// or to a tiny host shim for the numerical CPU test.
+extern "C" {
+  fn vx_tid() -> i32;
+  fn vx_bid() -> i32;
+  fn vx_bdim() -> i32;
+  fn vx_fma(a: f32, b: f32, c: f32) -> f32;
+}
+fn lerp_bf16(src: *const bf16, dst: *mut f32, n: i32, rate: f32) -> void {
+  unsafe {
+    let i = vx_bid() * vx_bdim() + vx_tid();
+    if i < n {
+      let s = dst[i];
+      let e = src[i] as f32;
+      dst[i] = vx_fma(rate, e - s, s);
+    }
+  }
+  return;
+}
+fn lerp_f32(src: *const f32, dst: *mut f32, n: i32, rate: f32) -> void {
+  unsafe {
+    let i = vx_bid() * vx_bdim() + vx_tid();
+    if i < n {
+      let s = dst[i];
+      let e = src[i];
+      dst[i] = vx_fma(rate, e - s, s);
+    }
+  }
+  return;
+}

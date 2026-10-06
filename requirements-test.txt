@@ -1,0 +1,1 @@
+# The record validator test suite uses only the Python standard library.

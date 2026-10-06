@@ -1,0 +1,14 @@
+{
+  "vx": {
+    "repository": "https://github.com/vx-lang/Vx",
+    "release": "v0.0.2",
+    "commit": "cd33877c3def51835bd3b7df3a75f5d36c876b05",
+    "llvm_major": 22,
+    "verified_local_llvm": "22.1.8",
+    "target_gpu": "sm_90"
+  },
+  "torch": "2.10.0",
+  "torch_cuda_wheels": "https://download.pytorch.org/whl/cu128",
+  "attention_runtime": "CUDA 13 required by pinned upstream FlashAttention-3 artifact",
+  "flash_attention_revision": "64c1e6d1f2780e7931839f41426ddcdb564a7cb9"
+}

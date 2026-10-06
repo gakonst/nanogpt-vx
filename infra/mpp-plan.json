@@ -1,0 +1,1 @@
+{"nodes":[{"id":"h100_8_sandbox","serviceId":"modal","method":"POST","path":"/sandbox/create","input":{"gpu":"H100:8","image":"nvidia/cuda:13.1.1-cudnn-devel-ubuntu24.04","timeout":3600},"dependsOn":[]}]}
